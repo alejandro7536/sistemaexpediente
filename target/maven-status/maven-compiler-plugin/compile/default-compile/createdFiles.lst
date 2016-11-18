@@ -1,0 +1,17 @@
+com\spring\entity\Paciente.class
+com\spring\model\AbstractModel.class
+com\spring\model\PacienteModel.class
+com\spring\entity\Clinica.class
+com\spring\controller\PageController.class
+com\spring\config\AppConfig.class
+com\spring\entity\Expediente.class
+com\spring\model\EmpleadoModel.class
+com\spring\model\PersonaModel.class
+com\spring\controller\ConsultaController.class
+com\spring\controller\PacienteController.class
+com\spring\config\AppInitializer.class
+com\spring\entity\Persona.class
+com\spring\entity\Empleado.class
+com\spring\config\HibernateConfiguration.class
+com\spring\model\ClinicaModel.class
+com\spring\model\ExpedienteModel.class
