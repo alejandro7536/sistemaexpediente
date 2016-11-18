@@ -1,4 +1,5 @@
 angular.module('Expediente', [])
+
 //Controlador del paciente, metodos REST
 .controller('PacienteController', function ($scope, $http) {
 
@@ -54,12 +55,14 @@ angular.module('Expediente', [])
                 console.log(error);
             });
         
-}).controller('EmpleadoController', function ($scope, $http) {
+})
+    //Controlador empleados
+.controller('EmpleadoController', function ($scope, $http) {
         console.log('Were in');
         
         //Get all the empleados mofo
         $http.get('/sistemaexpediente/empleados/').then(function success(parameters) {
-        console.log(parameters.data);
+        $scope.empleados = parameters.data;
     })
         
         

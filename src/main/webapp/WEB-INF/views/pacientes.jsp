@@ -182,13 +182,13 @@
         </div>
         
        </form>   
-       
+      </div></div></div>
 
    <!-- FIN AGREGAR PACIENTE-->
 
 
 
-</main>
+
 
   <!--<!encabezado-->
  <div class="section no-pad-bot #263238 blue-grey darken-4" id="ini">
@@ -251,7 +251,7 @@
 </div>
 </div>
   
-
+</main>
   <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-3.1.0.js"></script>
   <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-serialize.js"></script>
   <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/materialize.min.js"></script>

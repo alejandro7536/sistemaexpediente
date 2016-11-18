@@ -39,12 +39,12 @@
 
           <li class="bold "><a href="principal.htm" class="waves-effect waves-light"><i class="material-icons">home</i>Inicio</a></li>
           <li class="bold"><a href="getAllUsuarios.htm" class="waves-effect waves-light"><i class="material-icons">perm_identity</i>Usuarios</a></li>
-          <li class="bold active"><a href="pacientes" class="waves-effect waves-light"><i class="material-icons">pregnant_woman</i>Pacientes</a></li>
+          <li class="bold"><a href="pacientes" class="waves-effect waves-light"><i class="material-icons">pregnant_woman</i>Pacientes</a></li>
           <li class="bold"><a href="medicos.htm" class="waves-effect waves-light"><i class="material-icons">people</i>Médicos</a></li>
           
 
 
-           <li class="bold"><a href="empleados" class="waves-effect waves-light"><i class="material-icons">local_drink</i>Empleados</a></li>
+           <li class="bold active"><a href="empleados" class="waves-effect waves-light"><i class="material-icons">local_drink</i>Empleados</a></li>
             <li class="bold"><a href="getAllClinicas.htm" class="waves-effect waves-light"><i class="material-icons">store</i>Clinicas</a></li>
             <li class="bold"><a href="index.htm" class="waves-effect waves-light"><i class="material-icons">close</i>Cerrar Sesión</a></li>
           </ul>
@@ -58,7 +58,7 @@
   <!--<!encabezado-->
  <div class="section no-pad-bot #263238 blue-grey darken-4" id="ini">
          <div class="container ">
-          <h2 class="white-text left thin"><i class="material-icons"></i>Expediente: {{expediente.paciente.persona.nombre}} {{expediente.paciente.persona.apellido}}</h2>
+          <h2 class="white-text left thin"><i class="material-icons"></i>Administracion de empleados</h2>
           <div class='row center'>
           </div>
         </div>
@@ -74,22 +74,23 @@
 <table class="highlight centered" id="tabPacientes">
         <thead>
           <tr>
-              <th data-field="id">Id Afiliado </th>
+              <th data-field="id">Cod empleado</th>
               <th data-field="price">Nombre</th>
               <th data-field="name">Apellido</th>
-              <th data-field="price">Genero</th>
+              <th data-field="price">Puesto</th>
+              <th data-field="price">Fecha contratacion</th>
               <th data-field="price">Opciones</th>
           </tr>
         </thead>
         <tbody class="list">
-            <tr ng-repeat="p in pacientes">
-                <td class="id">{{p.idAfiliado}}</td>
-                <td class="nombre">{{p.persona.nombre}}</td>
-                <td class="apellido">{{p.persona.apellido}}</td>
-                <td class="genero">{{p.persona.genero}}</td>
+            <tr ng-repeat="e in empleados">
+                <td class="id">{{e.codEmpleado}}</td>
+                <td class="nombre">{{e.persona.nombre}}</td>
+                <td class="apellido">{{e.persona.apellido}}</td>
+                <td class="genero">{{e.puesto}}</td>
+                <td>{{e.fechaContratacion}}</td>
                 <td><button ng-click="delete($index)" class="delete">Borrar</button></td>
                 <td><button ng-click="edit($index)" class="update">Editar</button></td>
-                <td><a href="expediente?id={{p.idAfiliado}}">Ir a expediente</a></td>
             </tr>
         </tbody>
       </table>
